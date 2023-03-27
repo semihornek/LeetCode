@@ -11,7 +11,7 @@ class SmallestInfiniteSet {
 
   popSmallest(): number {
     if (this.heap.length === 1) {
-      this.removedElementsSet.clear();
+      this.removedElementsSet.add(this.heap[0]);
       return this.heap.pop()!;
     }
 
